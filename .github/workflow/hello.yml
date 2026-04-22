@@ -1,0 +1,23 @@
+# This is workflow name
+
+name: hello
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+
+  # This is name of job
+  greet:
+
+    # This is github runner
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Print hello
+        run: echo "Hello, From workflow"
+
+      - name: username
+        run: echo "This from username step"
