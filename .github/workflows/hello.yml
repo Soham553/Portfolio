@@ -21,3 +21,12 @@ jobs:
 
       - name: username
         run: echo "This from username step"
+
+  details:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      
+      - name: details of github runner
+        run: docker --version && python --version
