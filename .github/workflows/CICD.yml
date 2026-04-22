@@ -1,0 +1,43 @@
+name: Practicing to write workflows
+
+on:
+  workflow_dispatch:
+    
+jobs:
+  
+  code:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: checkout code
+        run: echo "code clone from github"
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Build docker container
+        run: echo "Docker container build"
+
+  test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Testing the code
+        run: echo "Testing the container" 
+
+  deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Deploying the app
+        run: echo "Docker Compose deplyed the app" 
+
