@@ -12,6 +12,7 @@ jobs:
 
         runs-on: ubuntu-latest
 
+        environment: Docker_user
         steps:
           - name: code checkout
             uses: actions/checkout@v4
