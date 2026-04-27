@@ -1,0 +1,7 @@
+services:
+
+    portfolio:
+        image: ${{ USER }}/github-actions-app
+
+    ports:
+        - "80:80"
