@@ -7,8 +7,14 @@ env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
+
+  
   Deploy:
     runs-on: self-hosted
+
+    env:
+        USER: ${{ vars.USER }}
+
 
     steps:
         
