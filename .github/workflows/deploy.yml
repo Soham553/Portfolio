@@ -13,7 +13,7 @@ jobs:
     steps:
         
       - name: checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Deploy with docker compose
         run: docker compose up -d --build
