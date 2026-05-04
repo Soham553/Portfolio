@@ -1,0 +1,27 @@
+name: Code Quality Test
+
+on:
+    workflow_call:
+      
+
+jobs:
+    
+    validate:
+
+        runs-on: ubuntu-latest
+
+
+        steps:
+
+            - name: requriements
+              run: npm run -r requriements.txt
+      
+            - name: checkout code
+              uses: actions/chekout@4
+
+            - name: Linter 
+              uses: stefanoeb/eslint-action@1.0.2 
+
+            - name: run SAST
+              run: bandit -r index.html
+
