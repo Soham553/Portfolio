@@ -1,0 +1,21 @@
+name: Docker Linter
+
+on:
+    workflow_call:
+      
+
+jobs:
+  
+    Validate-Docker:
+
+        runs-on: ubuntu-latest
+
+        steps:
+
+          - name: checkout
+            uses: actions/checkout@v4
+
+          - name: Hadolint
+            uses: hadolint/hadolint-action@v3
+            with:
+                dockerfile: Dockerfile 
