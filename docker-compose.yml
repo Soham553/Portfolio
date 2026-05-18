@@ -1,7 +1,5 @@
 services:
-
-    portfolio:
-        image: ${ USER }/github-actions-app
-
-        ports:
-            - "80:80"
+  web:
+    build: .  # Looks for a Dockerfile in the current directory
+    ports:
+      - "80:80"
